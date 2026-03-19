@@ -9,11 +9,10 @@ API REST construida con **ASP.NET Core** siguiendo principios de **Clean Archite
 El proyecto está estructurado en capas siguiendo Clean Architecture:
 
 Sci-Fi_Universe
-|
-|- Domain
-|- Application
-|- Infrastructure
-|- API
+- Domain
+- Application
+- Infrastructure
+- API
 
 
 ## 🔵 Domain
