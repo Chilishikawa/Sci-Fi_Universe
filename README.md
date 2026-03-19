@@ -20,35 +20,35 @@ Sci-Fi_Universe
 - Contiene entidades del negocio
 - No depende de ninguna otra capa
 - Ejemplo:
-  - `Product`
+  - `Character`
 
 ## 🟢 Application
 - Contiene lógica de aplicación (casos de uso)
 - Define interfaces (contratos)
 - Usa DTOs para comunicación
 - Componentes:
-  - `ProductService`
-  - `IProductRepository`
-  - `ProductDto`
+  - `CharacterService`
+  - `ICharacterRepository`
+  - `CharacterDto`
 
 ## 🟡 Infrastructure
 - Implementa acceso a datos
 - Usa Entity Framework Core
 - Componentes:
   - `ApplicationDbContext`
-  - `ProductRepository`
+  - `CharacterRepository`
 
 ## 🔴 API (Presentation)
 - Expone endpoints REST
 - Maneja HTTP
 - Componentes:
-  - `ProductController`
+  - `CharacterController`
 
 ---
 
 # 🧩 Funcionalidades
 
-✔ CRUD completo de productos  
+✔ CRUD completo de personajes  
 ✔ Arquitectura desacoplada  
 ✔ Uso de DTOs  
 ✔ Inyección de dependencias  
