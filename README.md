@@ -4,7 +4,7 @@ API REST construida con **ASP.NET Core** siguiendo principios de **Clean Archite
 
 ---
 
-# 🧠 Arquitectura
+# Arquitectura
 
 El proyecto está estructurado en capas siguiendo Clean Architecture:
 
@@ -15,13 +15,13 @@ Sci-Fi_Universe
 - API
 
 
-## 🔵 Domain
+## Domain
 - Contiene entidades del negocio
 - No depende de ninguna otra capa
 - Ejemplo:
   - `Character`
 
-## 🟢 Application
+## Application
 - Contiene lógica de aplicación (casos de uso)
 - Define interfaces (contratos)
 - Usa DTOs para comunicación
@@ -30,14 +30,14 @@ Sci-Fi_Universe
   - `ICharacterRepository`
   - `CharacterDto`
 
-## 🟡 Infrastructure
+## Infrastructure
 - Implementa acceso a datos
 - Usa Entity Framework Core
 - Componentes:
   - `ApplicationDbContext`
   - `CharacterRepository`
 
-## 🔴 API (Presentation)
+## API (Presentation)
 - Expone endpoints REST
 - Maneja HTTP
 - Componentes:
@@ -45,7 +45,7 @@ Sci-Fi_Universe
 
 ---
 
-# 🧩 Funcionalidades
+# Funcionalidades
 
 ✔ CRUD completo de personajes  
 ✔ Arquitectura desacoplada  
@@ -57,7 +57,7 @@ Sci-Fi_Universe
 
 ---
 
-# 📦 Entidad Principal
+# Entidad Principal
 
 ## Character
 
@@ -73,7 +73,7 @@ Sci-Fi_Universe
 
 ---
 
-# 🚀 Mejoras 24-03-2026 17:00: AutoMapper + MongoDB
+# Mejoras 24-03-2026 17:00: AutoMapper + MongoDB
 
 Este documento describe las mejoras aplicadas al proyecto para elevarlo a un nivel más profesional:
 
