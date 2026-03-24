@@ -1,4 +1,5 @@
 using Application.Interfaces;
+using Application.Mappings;
 using Application.Services;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
@@ -9,12 +10,22 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 // EF Core InMemory
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseInMemoryDatabase("TestDb"));
+//builder.Services.AddDbContext<ApplicationDbContext>(options =>
+//    options.UseInMemoryDatabase("TestDb"));
+
+// MongoDb
+builder.Services.Configure<MongoDbSettings>(
+    builder.Configuration.GetSection("MongoDbSettings"));
 
 // Dependency Injection
-builder.Services.AddScoped<ICharacterRepository, CharacterRepository>();
+//builder.Services.AddScoped<ICharacterRepository, CharacterRepository>();
+
+// Implementación para MongoDb Repository
+builder.Services.AddScoped<ICharacterRepository, CharacterMongoRepository>();
+
 builder.Services.AddScoped<CharacterService>();
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
