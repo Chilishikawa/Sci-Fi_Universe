@@ -69,3 +69,14 @@ Sci-Fi_Universe
     "work": "The Matrix",
     "birthDate": "1962-03-11"
   }
+
+---
+
+# 🚀 Mejoras 24-03-2026 17:00: AutoMapper + MongoDB
+
+Este documento describe las mejoras aplicadas al proyecto para elevarlo a un nivel más profesional:
+
+- ✔ Integración de AutoMapper
+- ✔ Soporte para MongoDB como alternativa a EF Core
+
+---
